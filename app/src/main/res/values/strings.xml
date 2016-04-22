@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LearnRecyclerView</string>
+    <string name="add_item">增加条目</string>
+    <string name="remove_item">移除条目</string>
+</resources>

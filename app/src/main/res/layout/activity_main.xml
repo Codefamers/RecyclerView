@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.learnrecyclerview.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="8dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_item"
+                android:background="@null"
+                android:onClick="addItem"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="8dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/remove_item"
+                android:background="@null"
+                android:onClick="removeItem"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="8dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_item"
+                android:background="@null"
+                android:onClick="addItem"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        />
+
+</LinearLayout>
